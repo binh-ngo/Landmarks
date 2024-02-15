@@ -4,9 +4,13 @@
 //
 //  Created by Binh Ngo on 2/14/24.
 //
+// Foundation framework provides fundamental data types, collections, and operating system services.
 import Foundation
+// SwiftUI framework is used for building user interfaces across Apple platforms.
 import SwiftUI
+// CoreLocation framework provides location and heading information to your app.
 import CoreLocation
+
 
 struct Landmark: Hashable, Codable, Identifiable {
     var id: Int
@@ -14,12 +18,15 @@ struct Landmark: Hashable, Codable, Identifiable {
     var park: String
     var state: String
     var description: String
+    var isFavorite: Bool
     
+//    returns an image object using the imageName property
     private var imageName: String
     var image: Image {
         Image(imageName)
     }
     
+//    returns a CLLocationCoordinate2D object using the long x lat values
     private var coordinates: Coordinates
     
     var locationCoordinate: CLLocationCoordinate2D {
