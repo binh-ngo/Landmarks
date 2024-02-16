@@ -12,6 +12,7 @@ class ModelData {
 //    load data arrays into modelData model
     var landmarks: [Landmark] = load("landmarkData.json")
     var hikes: [Hike] = load("hikeData.json")
+    var profile = Profile.default
     
     var categories: [String: [Landmark]] {
         Dictionary(
