@@ -5,6 +5,7 @@
 //  Created by Binh Ngo on 2/13/24.
 //
 
+// This is the app body. WindowGroup declares ContentView as the root view of the app
 import SwiftUI
 
 @main
